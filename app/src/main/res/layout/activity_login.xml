@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context="com.test.questway.LoginActivity"
+    android:orientation="vertical">
+  <!--  android:background="@drawable/background_login" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUEST WAY"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:id="@+id/etLogin"
+                android:background="@drawable/rounded_et"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:hint="Enter email address"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:id="@+id/etPass"
+                android:visibility="gone"
+                android:background="@drawable/rounded_et"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="Enter password"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_btn"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/llEnter">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:padding="5dp"
+                    android:id="@+id/tvEnter"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or use"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Facebook"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorButton"
+                    android:id="@+id/withFb"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Google+"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorButton"
+                    android:id="@+id/withGoogle"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_text"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
